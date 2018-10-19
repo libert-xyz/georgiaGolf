@@ -1,0 +1,84 @@
+
+
+welcome: |
+
+           Hello, would you like to hear the featured golf course or ask a question about
+           a golf course or driving range?
+
+fallback: |
+
+        sorry i didn't understand what you said,
+        Would you like to hear the featured golf course or ask a question about a golf course or driving range?
+
+
+
+fact1: |
+
+        <speak>
+          <audio src='https://s3.amazonaws.com/conferences-alexa-skills/fact_chime_short-e.mp3'/>
+          <audio src='https://s3.amazonaws.com/conferences-alexa-skills/zenDesk/facts/crm_fact_1-e.mp3'/>
+          <audio src='https://s3.amazonaws.com/conferences-alexa-skills/another_one-e.mp3'/>
+        </speak>
+
+
+
+ft_1: |
+
+      <speak>
+        <audio src='https://s3.amazonaws.com/golf-course-skill-production/new-optimized/alfred-tup-holmes-e.mp3'/>
+      </speak>
+
+
+ft_2: |
+
+      <speak>
+        <audio src='https://s3.amazonaws.com/golf-course-skill-production/new-optimized/ansley-golf-club-e.mp3'/>
+      </speak>
+
+ft_3: |
+
+      <speak>
+        <audio src='https://s3.amazonaws.com/golf-course-skill-production/new-optimized/bears-best-atlanta-e.mp3'/>
+      </speak>
+
+ft_4: |
+
+      <speak>
+        <audio src='https://s3.amazonaws.com/golf-course-skill-production/new-optimized/browns-mill-e.mp3'/>
+      </speak>
+ft_5: |
+
+      <speak>
+        <audio src='https://s3.amazonaws.com/golf-course-skill-production/new-optimized/charlie-yates-golf-e.mp3'/>
+      </speak>
+ft_6: |
+
+      <speak>
+        <audio src='https://s3.amazonaws.com/golf-course-skill-production/new-optimized/cobblestone-golf-club-e.mp3'/>
+      </speak>
+ft_7: |
+
+      <speak>
+        <audio src='https://s3.amazonaws.com/golf-course-skill-production/new-optimized/fox-creek-golf-club-e.mp3'/>
+      </speak>
+
+ft_8: |
+
+      <speak>
+        <audio src='https://s3.amazonaws.com/golf-course-skill-production/new-optimized/fox-creek-golf-club-e.mp3'/>
+      </speak>
+ft_9: |
+
+      <speak>
+        <audio src='https://s3.amazonaws.com/golf-course-skill-production/new-optimized/golf-tech-driving-range-e.mp3'/>
+      </speak>
+ft_10: |
+
+      <speak>
+        <audio src='https://s3.amazonaws.com/golf-course-skill-production/new-optimized/marietta-golf-center-driving-range-e.mp3'/>
+      </speak>
+ft_11: |
+
+      <speak>
+        <audio src='https://s3.amazonaws.com/golf-course-skill-production/new-optimized/northcrest-golf-range-e.mp3'/>
+      </speak>

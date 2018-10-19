@@ -1,0 +1,12 @@
+{
+    "dev": {
+        "app_function": "skill.app",
+        "aws_region": "us-east-1",
+        "profile_name": "victoria",
+        "project_name": "golfCourse-skill",
+        "runtime": "python2.7",
+        "s3_bucket": "golfcourse-alexa-skill",
+        "apigateway_description" : "Golf Course Skill",
+        "lambda_description" : "Golf Course Skill"
+    }
+}
