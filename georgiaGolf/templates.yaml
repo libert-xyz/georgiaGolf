@@ -149,3 +149,27 @@ marietta-golf-center-driving-range : |
       <speak>
         <audio src='https://s3.amazonaws.com/golf-course-skill-production/new-optimized/marietta-golf-center-driving-range-e.mp3'/>
       </speak>
+
+
+phone_confirm: |
+
+    <speak>
+        <say-as interpret-as="telephone">{{phone}}</say-as>. Is it correct?
+    </speak>
+
+
+send_text: information is sent to your device, Would you like to ask about another golf course or driving range?
+
+
+phone_incorrect: Okay. Let's try one more time, tell me your phone number
+
+
+
+help: |
+
+          Hello, I’m happy to help.
+          To best explore Golf Georgia features; I will offer you a chance to hear the featured golf course or you can ask about a golf course or driving range.
+          For instance, to ask about a golf course in Atlanta, Augusta. Or you can ask by location such as Cobb, Duluth, Buckhead areas.
+          Once you find a golf course or driving range you like more information, I can send you a web link via text message that will feature the golf course or
+          driving range you are asking about. The web link opens up a landing page with contact information and google maps for directions.
+          When you are ready, ask me about an Atlanta or Augusta golf course, driving range.
