@@ -3,6 +3,7 @@ import os
 import random
 from flask import Flask, render_template
 from flask_ask import Ask, request, session, question, statement, audio
+from mapper import map
 
 
 app = Flask(__name__)
@@ -19,6 +20,7 @@ golfcourse_img = 'https://s3.amazonaws.com/golf-course-skill-production/new-opti
 
 #oldendpoint: arn:aws:lambda:us-east-1:770591633881:function:golf-course-production-skill
 
+#newEndpoint: https://cx4hqadrlb.execute-api.us-east-1.amazonaws.com/dev
 
 featured = ['ft_1','ft_2','ft_3','ft_4','ft_5','ft_5','ft_6','ft_7','ft_8','ft_9','ft_10','ft_11']
 
@@ -36,6 +38,34 @@ featured_dict = {
                  'ft_11' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/river-pines-golf.png'
                 }
 
+
+
+# GOLF_COURSES = ['river-pines-golf',
+#                 'brown-mill',
+#                 'northcrest-golf-range',
+#                 'cobblestone-golf-club',
+#                 'bears-best-atlanta',
+#                 'alfred-tup-holmes',
+#                 'charlie-yates-golf',
+#                 'fox-creek-golf-club',
+#                 'ansley-golf-club',
+#                 'golf-tech-driving-range',
+#                 'marietta-golf-center-driving-range']
+
+# GOLF_COURSES_DICT = {
+#
+#             'river-pines-golf' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/river-pines-golf.png',
+#             'brown-mill' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/browns-mill.png',
+#             'northcrest-golf-range' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/north-cherokee-town-and-country.png',
+#             'cobblestone-golf-club' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/cobblestone-golf-club.png',
+#             'bears-best-atlanta' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/bears-best-atlanta.png',
+#             'alfred-tup-holmes' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/alfred-tup-holmes.png',
+#             'charlie-yates-golf': 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/charlie-yates-golf.png',
+#             'fox-creek-golf-club': 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/fox-creek-golf-club.png',
+#             'ansley-golf-club' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/ansley-golf-club.png',
+#             'golf-tech-driving-range' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/golf-tech-driving-range.png',
+#             'marietta-golf-center-driving-range' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/marietta-golf-center-driving-range.png'
+#             }
 
 @ask.launch
 def launch():
@@ -71,6 +101,38 @@ def featuredGolfCourse():
             .standard_card(title='Golf Georgia',
             text=ft_tts,
             large_image_url=featured_dict[ft])
+
+
+@ask.intent('DrivingRangesAtlantaIntent')
+def drvingRange():
+
+    session.attributes['drivingrange'] = True
+
+    driving_range = render_template('drivingrange')
+
+    return question(driving_range) \
+        .standard_card(title='Golf Georgia',
+        text='Driving Ranges',
+        large_image_url=golfcourse_img)
+
+
+@ask.intent('SelectGolfCourseOnlyIntent')
+def selectGolfCourse(golfCourseName):
+
+    #return ft_{number} or None
+    cName = map(golfCourseName)
+    print '++++++' + golfCourseName + '+++++++'
+    print '######' + cName + '#######'
+
+    if cName != None:
+        golf_course = render_template(cName)
+        return question(golf_course) \
+            .standard_card(title='Golf Georgia',
+            text='Driving Ranges',
+            large_image_url=featured_dict[cName])
+
+    else:
+        return statement('whot?')
 
 
 @ask.intent('eventIntent')
