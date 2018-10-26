@@ -39,24 +39,6 @@ featured_dict = {
                 'ft_11' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/river-pines-golf.png'
                 }
 
-
-
-
-
-
-
-# GOLF_COURSES = ['river-pines-golf',
-#                 'brown-mill',
-#                 'northcrest-golf-range',
-#                 'cobblestone-golf-club',
-#                 'bears-best-atlanta',
-#                 'alfred-tup-holmes',
-#                 'charlie-yates-golf',
-#                 'fox-creek-golf-club',
-#                 'ansley-golf-club',
-#                 'golf-tech-driving-range',
-#                 'marietta-golf-center-driving-range']
-
 # GOLF_COURSES_DICT = {
 #
 #             'river-pines-golf' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/river-pines-golf.png',

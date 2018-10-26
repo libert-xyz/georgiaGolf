@@ -52,6 +52,36 @@ GOLF_INFO = {'ft_1': "Golf Georgia - https://golfgeorgia.info/Alfred-Tup-Holmes-
              'ft_25': "Golf Georgia - https://golfgeorgia.info/druid-hills-golf-course" }
 
 
+
+
+GOLF_IMG = {
+            1: 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/alfred-tup-holmes.png',
+            2: 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/ansley-golf-club.png',
+            3: 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/bears-best-atlanta.png',
+            4 : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/browns-mill.png',
+            5 : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/charlie-yates-golf.png',
+            6: 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/cobblestone-golf-club.png',
+            7: 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/fox-creek-golf-club.png',
+            8 : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/golf-tech-driving-range.png',
+            9 : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/marietta-golf-center-driving-range.png',
+            10 : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/north-cherokee-town-and-country.png',
+            11 : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/river-pines-golf.png',
+            12 : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/BobbyJonesX.png',
+            13 : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/ForestHillsX.png',
+            14 : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/GoshenPlantationX.png',
+            15 : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/IndianHillsX.png',
+            16 : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/fox-creek-golf-club.png',
+            17 : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/JohnAWhiteX.png',
+            18 : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/north-cherokee-town-and-country.png',
+            19 : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/WolfCreekX.png',
+            20 : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/CandlerParkX.png',
+            21 : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/CrossCreekX.png',
+            22 : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/TopGolfX.png',
+            23 : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/GeorgiaTrailGG-transparent.png',
+            24 : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/PeachtreeGolfX.png',
+            25 : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/DruidHillsX.png'
+}
+
 def map(golf_name):
     for i in range(1,len(GOLF)+1):
         #Return dict key number
