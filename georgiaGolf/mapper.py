@@ -1,4 +1,4 @@
-GOLF = {1: ['alfred tup holmes golf club','alfred tup holmes club','alfred tup holmes'],
+GOLF = {1: ['alfred tup holmes golf club','alfred tup holmes club','alfred tup holmes','alfred tup holme'],
         2: ['ansley golf club'],
         3: ['bear best atlanta','bears best atlanta'],
         4: ['brown mill','browns mill golf','brown mill golf course'],
@@ -86,9 +86,14 @@ def map(golf_name):
     for i in range(1,len(GOLF)+1):
         #Return dict key number
         if str(golf_name) in GOLF.get(i):
-            return 'ft_' + str(i)
+            #return 'ft_' + str(i)
+            return i
     return 'None'
 
+
+def map_img(cName):
+
+    return GOLF_IMG[cName]
 
 def map_info(ft_number):
     return GOLF_INFO[ft_number]

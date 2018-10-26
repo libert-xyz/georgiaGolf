@@ -3,9 +3,9 @@ import os
 import random
 from flask import Flask, render_template
 from flask_ask import Ask, request, session, question, statement, audio
-from mapper import map, map_info
+from mapper import map, map_info, map_img
 from dynamoDB import write_user, check_phone
-
+from send_sms import send_message
 
 app = Flask(__name__)
 ask = Ask(app, "/")
@@ -38,6 +38,8 @@ featured_dict = {
                 'ft_10' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/north-cherokee-town-and-country.png',
                 'ft_11' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/river-pines-golf.png'
                 }
+
+
 
 # GOLF_COURSES_DICT = {
 #
@@ -75,15 +77,15 @@ def featuredGolfCourse():
     session.attributes['yes'] = 'featured'
 
     #List of Courses
-    session.attributes['featured'] = featured
+    #session.attributes['featured'] = featured
 
     random.shuffle(featured)
-    ft = session.attributes['featured'].pop()
+    ft = featured.pop()
 
     #GOLF_INFO
-    session.attributes['featured'] = map_info(ft)
+    session.attributes['info'] = map_info(ft)
 
-    ft_tts = 'Golf Course'
+    ft_tts = 'Featured'
 
     featured_courses = render_template(ft)
 
@@ -146,20 +148,20 @@ def drvingRange():
 @ask.intent('SelectGolfCourseOnlyIntent')
 def selectGolfCourseOnly(golfCourseName):
 
-    #return ft_{number} or None
+    #return {number} or None
     cName = map(golfCourseName.lower())
     print '++++++' + golfCourseName + '+++++++'
-    print '######' + cName + '#######'
+    print str(cName)
 
     #GOLF_INFO
-    session.attributes['featured'] = map_info(ft)
+    session.attributes['info'] = map_info('ft_'+str(cName))
 
     if cName != None:
-        golf_course = render_template(cName)
+        golf_course = render_template('g_'+str(cName))
         return question(golf_course) \
             .standard_card(title='Golf Georgia',
             text=golfCourseName,
-            large_image_url=featured_dict[cName])
+            large_image_url=map_img(cName))
 
     else:
         return statement('whot?')
@@ -172,14 +174,17 @@ def selectGolfCourse(golfCourseName):
     #return ft_{number} or None
     cName = map(golfCourseName.lower())
     print '++++++' + golfCourseName + '+++++++'
-    print '######' + cName + '#######'
+    print str(cName)
+
+    #GOLF_INFO
+    session.attributes['info'] = map_info('ft_'+str(cName))
 
     if cName != None:
-        golf_course = render_template(cName)
+        golf_course = render_template('g_'+str(cName))
         return question(golf_course) \
             .standard_card(title='Golf Georgia',
             text=golfCourseName,
-            large_image_url=golfcourse_img)
+            large_image_url=map_img(cName))
 
     else:
         return statement('whot?')
@@ -192,10 +197,7 @@ def yes_func():
     if session.attributes.get('yes') == 'featured':
 
         phone_n = check_phone(str(session.user.userId))
-
-
-        session.attributes['featured']
-
+        #session.attributes['featured']
 
         if phone_n == False:
 
@@ -209,6 +211,8 @@ def yes_func():
         #TWILIO SEND
         else:
             send_text = render_template('send_text')
+            send_message(phone_n,session.attributes.get('info'))
+
             return question(send_text) \
                     .standard_card(title='Golf Georgia',
                     text=send_text,
@@ -223,6 +227,8 @@ def yes_func():
 
         #TWILIO SEND
         send_text = render_template('send_text')
+        send_message('+1'+ str(session.attributes['phone_number']),session.attributes.get('info'))
+
         return question(send_text) \
                 .standard_card(title='Golf Georgia',
                 text=send_text,

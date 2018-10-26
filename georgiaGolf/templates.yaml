@@ -74,11 +74,101 @@ ft_11: |
       </speak>
 
 
+g_1: |
+
+      Alfred Tup Holmes Golf Club is an 18-hole public golf course with a slope rating of 120 and a 69.
+      The course features 3 sets of tees for different skill levels. Fees are $22 dollars on week days and $28 on weekends
+
+      What other golf courses would you like to know about?
 
 
+g_2: |
 
 
-ft_12: |
+    Ansley Golf Club Midtown is a 9-hole golf course designed by Ward Northrup and has a slope rating of 138 and a 73.
+
+    What other golf courses would you like to know about?
+
+
+g_3: |
+
+
+    An 18-hole golf course, Bear’s Best is a high-end daily fee course focused on corporate entertaining and golf outings.vary from
+    fifty nine dollars to one hundred nineteen dollars.
+
+    What other golf courses would you like to know about?
+
+
+g_4: |
+
+
+    Brown Mill Golf Course is has challenging landscapes with a slope rating of 123 and a 71 USGA rating.
+    The course features 3 sets of tees for different skill levels
+
+    What other golf courses would you like to know about?
+
+
+g_5: |
+
+  Charlie Yates Golf is a 9-hole public course that features 3 sets of tees for different skill levels. Fees vary from fourteen dollars to eighteen dollars.
+
+  What other golf courses would you like to know about?
+
+
+g_6: |
+
+  Cobblestone Golf Club is voted Best Municipal Courses by Golfweek. Additional awards  include a Four Star rating by Golf Digest,
+  they have been featured on Top 100 Courses You can Play by Golf Magazine,  Course rates vary from $25. to $67.
+
+  What other golf courses would you like to know about?
+
+
+g_7: |
+
+  Located a few long par fives  from the new Atlanta Braves stadium, Fox Creek Golf Club and Legacy Golf
+  Links are two of the nation’s best driving range and golf destinations, recognized nationally as a Top 50 Public Driving Range Facility by Golf Range Association of America.
+  Range bucket ball fees range from five dollars to thirteen dollars.
+
+  What other golf courses would you like to know about?
+
+
+g_8: |
+
+    Golf Tech Driving Range is an indoor golf facility who has helped thousands of golfers improve their game with a 96 percent success rate.
+    Golf Tech provides you with access to advanced golf training technology including motion measurement and video analysis that is rarely available to the average golfer.
+    Three Atlanta locations available.  Discounts on lesson plans.
+
+    What other golf courses would you like to know about?
+
+
+g_9: |
+
+    Known for the best grass tees in Georgia, Marietta Golf Center  is among the top 100 driving ranges in America for over five years.
+    Range ball pricing from six to fourteen dollars.
+
+
+    What other golf courses would you like to know about?
+
+
+g_10: |
+
+
+    North at Cherokee Town and Country Club is an 18-hole private golf course designed by Joe Lee and has a rating slope of 134 and a 73.
+    Fees for Week days and weekends are one hundred and fifty dollars.
+
+    What other golf courses would you like to know about?
+
+
+g_11: |
+
+
+    River Pines Golf Course is one of the best public golf courses in the Atlanta area.The practice facilities are top-notch with a full driving range,
+    chipping & putting greens, as well as regular golf clinics to keep your golf game moving forward.
+
+
+    What other golf courses would you like to know about?
+
+g_12: |
 
         When the course reopens, Bobby Jones will be a revolutionary and spectacular reversible 9-hole golf course.
         You will be able to play it twice – or 18 holes – and experience a different course the second time around.
@@ -87,7 +177,7 @@ ft_12: |
         What other golf courses would you like to know about?
 
 
-ft_13 : |
+g_13 : |
 
 
         Forest Hills Golf Club is Voted Best Public Golf Course in Augusta and offers affordable golf rates from $28 to $46 depending on the time of day.
@@ -96,7 +186,7 @@ ft_13 : |
         What other golf courses would you like to know about?
 
 
-ft_14 : |
+g_14 : |
 
 
         The par-72 golf course at Goshen Plantation Golf Club is one the best public golf in Augusta, Georgia.
@@ -105,7 +195,7 @@ ft_14 : |
         What other golf courses would you like to know about?
 
 
-ft_15: |
+g_15: |
 
       Indian Hills Country Club is an affordable family-oriented private club located in East Cobb County. The club features 27 holes of golf,
       open seven days per week, with extensive practice facilities.
@@ -115,7 +205,7 @@ ft_15: |
 
 
 
-ft_16: |
+g_16: |
 
         Located a few long par fives  from the new Atlanta Braves stadium, Fox Creek Golf Club and Legacy Golf Links are two of the nation’s
         best driving range and golf destinations, recognized nationally as a Top 50 Public Driving Range Facility by Golf Range Association of America.
@@ -123,7 +213,7 @@ ft_16: |
 
         What other golf courses would you like to know about?
 
-ft_17: |
+g_17: |
 
         John A. White Golf Course is a 9-hole a public golf course that measures 2842 yards from the longest tees.
         Greens and fairways are bermuda grass. Fees range from eighteen dollars to twenty seven dollars.
@@ -131,7 +221,7 @@ ft_17: |
         What other golf courses would you like to know about?
 
 
-ft_18: |
+g_18: |
 
         North at Cherokee Town and Country Club is an 18-hole private golf
         course designed by Joe Lee and has a rating slope of 134 and a 73.
@@ -140,7 +230,7 @@ ft_18: |
         What other golf courses would you like to know about?
 
 
-ft_19: |
+g_19: |
 
       Wolf Creek Golf Course is an 18-hole semi-private golf course with a slope rating of 142 and a 73.
       The course is located just 10 minutes from Hartsfield-Jackson International Airport and 15 minutes from downtown Atlanta.
@@ -149,7 +239,7 @@ ft_19: |
       What other golf courses would you like to know about?
 
 
-ft_20: |
+g_20: |
 
 
       Candler Park Golf Course is a nine hole public golf course designed by Helen Smith.
@@ -158,7 +248,8 @@ ft_20: |
 
       What other golf courses would you like to know about?
 
-ft_21: |
+
+g_21: |
 
 
         Cross Creek Golf Club is an 18-hole semi-private golf course with a slope rating of 61 and a 50 USGA rating.
@@ -166,7 +257,7 @@ ft_21: |
         What other golf courses would you like to know about?
 
 
-ft_22: |
+g_22: |
 
 
     There are two Atlanta locations for Top golf.  Top Golf Midtown and Top Golf Alpha-rhetta.
@@ -177,7 +268,7 @@ ft_22: |
     What other golf courses would you like to know about?
 
 
-ft_23: |
+g_23: |
 
     The Georgia Trail at Sugarloaf provides, Regulation Executive Golf Course, Driving Range, Short-Game Practice Area, Teaching Academy,
     Champions Trail miniature PUTT-PUTT course. For private parties, they have the Outdoor Cabana Area with beach chairs, palm trees, waterfalls, and a music area.
@@ -186,7 +277,7 @@ ft_23: |
 
 
 
-ft_24: |
+g_24: |
 
 
     Peachtree Golf Center  has a two-level hitting area, with numerous mat stations.
@@ -197,87 +288,17 @@ ft_24: |
     What other golf courses would you like to know about?
 
 
-ft_25: |
+g_25: |
 
       The 18-hole Druid Hills Golf Club in Atlanta, Georgia is a private golf course that
        measures 6860 yards from the longest tees and has a slope rating of 139 and a 73.
 
        What other golf courses would you like to know about?
 
+
 drivingrange: |
 
     I have found two driving ranges in Atlanta. Brown Mill Golf Course and Northcrest Golf Range. Which would you like information on?
-
-
-river-pines-golf: |
-
-          <speak>
-            <audio src='https://s3.amazonaws.com/golf-course-skill-production/new-optimized/river-pines-golf-e.mp3'/>
-          </speak>
-
-
-
-browns-mill: |
-            <speak>
-              <audio src='https://s3.amazonaws.com/golf-course-skill-production/new-optimized/browns-mill-e.mp3'/>
-            </speak>
-
-
-northcrest-golf-range: |
-      <speak>
-        <audio src='https://s3.amazonaws.com/golf-course-skill-production/new-optimized/northcrest-golf-range-e.mp3'/>
-      </speak>
-
-cobblestone-golf-club : |
-      <speak>
-        <audio src='https://s3.amazonaws.com/golf-course-skill-production/new-optimized/cobblestone-golf-club-e.mp3'/>
-      </speak>
-
-
-bears-best-atlanta : |
-
-        <speak>
-          <audio src='https://s3.amazonaws.com/golf-course-skill-production/new-optimized/bears-best-atlanta-e.mp3'/>
-        </speak>
-
-
-alfred-tup-holmes: |
-
-      <speak>
-        <audio src='https://s3.amazonaws.com/golf-course-skill-production/new-optimized/alfred-tup-holmes-e.mp3'/>
-      </speak>
-
-charlie-yates-golf : |
-
-      <speak>
-        <audio src='https://s3.amazonaws.com/golf-course-skill-production/new-optimized/charlie-yates-golf-e.mp3'/>
-      </speak>
-
-
-fox-creek-golf-club: |
-
-      <speak>
-        <audio src='https://s3.amazonaws.com/golf-course-skill-production/new-optimized/fox-creek-golf-club-e.mp3'/>
-      </speak>
-
-ansley-golf-club : |
-
-        <speak>
-          <audio src='https://s3.amazonaws.com/golf-course-skill-production/new-optimized/ansley-golf-club-e.mp3'/>
-        </speak>
-
-golf-tech-driving-range: |
-
-      <speak>
-        <audio src='https://s3.amazonaws.com/golf-course-skill-production/new-optimized/golf-tech-driving-range-e.mp3'/>
-      </speak>
-
-
-marietta-golf-center-driving-range : |
-
-      <speak>
-        <audio src='https://s3.amazonaws.com/golf-course-skill-production/new-optimized/marietta-golf-center-driving-range-e.mp3'/>
-      </speak>
 
 
 phone_confirm: |

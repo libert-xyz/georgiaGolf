@@ -7,11 +7,13 @@ auth_token = env.auth_token
 
 client = Client(account_sid, auth_token)
 
-message = client.messages \
-                .create(
-                     body="Golf Georgia - https://golfgeorgia.info/ansley-golf-club",
-                     from_='+14702645974',
-                     to='+14717191900'
-                 )
 
-print(message.sid)
+def send_message(number,golf_info):
+    message = client.messages \
+                    .create(
+                         body=golf_info ,
+                         from_='+14702645974',
+                         to=number
+                     )
+
+    print(message.sid)
