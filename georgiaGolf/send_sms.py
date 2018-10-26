@@ -11,7 +11,7 @@ message = client.messages \
                 .create(
                      body="Golf Georgia - https://golfgeorgia.info/ansley-golf-club",
                      from_='+14702645974',
-                     to='+15717191907'
+                     to='+14717191900'
                  )
 
 print(message.sid)
