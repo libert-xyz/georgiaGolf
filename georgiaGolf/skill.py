@@ -3,7 +3,7 @@ import os
 import random
 from flask import Flask, render_template
 from flask_ask import Ask, request, session, question, statement, audio
-from mapper import map
+from mapper import map, map_info
 from dynamoDB import write_user, check_phone
 
 
@@ -36,8 +36,12 @@ featured_dict = {
                 'ft_8' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/golf-tech-driving-range.png',
                 'ft_9' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/marietta-golf-center-driving-range.png',
                 'ft_10' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/north-cherokee-town-and-country.png',
-                 'ft_11' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/river-pines-golf.png'
+                'ft_11' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/river-pines-golf.png'
                 }
+
+
+
+
 
 
 
@@ -93,6 +97,10 @@ def featuredGolfCourse():
 
     random.shuffle(featured)
     ft = session.attributes['featured'].pop()
+
+    #GOLF_INFO
+    session.attributes['featured'] = map_info(ft)
+
     ft_tts = 'Golf Course'
 
     featured_courses = render_template(ft)
@@ -102,6 +110,42 @@ def featuredGolfCourse():
             .standard_card(title='Golf Georgia',
             text=ft_tts,
             large_image_url=featured_dict[ft])
+
+
+
+
+@ask.intent('TellMeAboutGolfCourseIntent')
+def askGolfCourse():
+
+    ask_golf = render_template('ask_golf')
+
+    return question(ask_golf) \
+            .standard_card(title='Golf Georgia',
+            text='About Golf Course',
+            large_image_url=golfcourse_img)
+
+
+
+@ask.intent('TellMeAboutAugustaCourseIntent')
+def augusta_func():
+
+    ask_augusta = render_template('ask_augusta')
+
+    return question(ask_augusta) \
+            .standard_card(title='Golf Georgia',
+            text='Augusta Course',
+            large_image_url=golfcourse_img)
+
+
+@ask.intent('TellMeAboutAtlantaCourseIntent')
+def atlanta_func():
+
+    ask_atlanta = render_template('ask_atlanta')
+
+    return question(ask_atlanta) \
+            .standard_card(title='Golf Georgia',
+            text='Atlanta Course',
+            large_image_url=golfcourse_img)
 
 
 @ask.intent('DrivingRangesAtlantaIntent')
@@ -118,10 +162,33 @@ def drvingRange():
 
 
 @ask.intent('SelectGolfCourseOnlyIntent')
+def selectGolfCourseOnly(golfCourseName):
+
+    #return ft_{number} or None
+    cName = map(golfCourseName.lower())
+    print '++++++' + golfCourseName + '+++++++'
+    print '######' + cName + '#######'
+
+    #GOLF_INFO
+    session.attributes['featured'] = map_info(ft)
+
+    if cName != None:
+        golf_course = render_template(cName)
+        return question(golf_course) \
+            .standard_card(title='Golf Georgia',
+            text=golfCourseName,
+            large_image_url=featured_dict[cName])
+
+    else:
+        return statement('whot?')
+
+
+
+@ask.intent('SelectGolfCourseIntent')
 def selectGolfCourse(golfCourseName):
 
     #return ft_{number} or None
-    cName = map(golfCourseName)
+    cName = map(golfCourseName.lower())
     print '++++++' + golfCourseName + '+++++++'
     print '######' + cName + '#######'
 
@@ -129,8 +196,8 @@ def selectGolfCourse(golfCourseName):
         golf_course = render_template(cName)
         return question(golf_course) \
             .standard_card(title='Golf Georgia',
-            text='Driving Ranges',
-            large_image_url=featured_dict[cName])
+            text=golfCourseName,
+            large_image_url=golfcourse_img)
 
     else:
         return statement('whot?')
@@ -142,7 +209,13 @@ def yes_func():
     #check if phone in DB
     if session.attributes.get('yes') == 'featured':
 
-        if check_phone(str(session.user.userId)) == False:
+        phone_n = check_phone(str(session.user.userId))
+
+
+        session.attributes['featured']
+
+
+        if phone_n == False:
 
             session.attributes['yes'] = 'phone_ask'
             return question('Great!, tell me your phone number') \
@@ -151,6 +224,7 @@ def yes_func():
                     large_image_url=golfcourse_img)
 
         #phone in DB, send message
+        #TWILIO SEND
         else:
             send_text = render_template('send_text')
             return question(send_text) \

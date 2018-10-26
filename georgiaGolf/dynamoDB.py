@@ -24,10 +24,10 @@ def write_user(deviceId,phone):
 
 def check_phone(deviceId):
     """
-    returns True if phone in DB , False if not
+    returns PhoneNumber if phone in DB , False if not
     """
     try:
         check_deviceid = UserModel.get(deviceId)
-        return True
+        return '+1'+ str(check_deviceid.phoneNumber)
     except UserModel.DoesNotExist:
         return False
