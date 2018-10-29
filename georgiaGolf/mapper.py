@@ -3,7 +3,7 @@ GOLF = {1: ['alfred tup holmes golf club','alfred tup holmes club','alfred tup h
         3: ['bear best atlanta','bears best atlanta'],
         4: ['brown mill','browns mill golf','brown mill golf course'],
         5: ['charlie yates golf','charlie yates'],
-        6: ['cobblestone golf club','cobblestone','cobblestone golf','cobblestone golf course'],
+        6: ['cobblestone golf club','cobblestone','cobblestone golf','cobblestone golf course','cobb'],
         7: ['fox creek golf club'],
         8: ['golf tech driving range','golf tech'],
         9: ['marietta golf center driving range','marietta golf center','marietta golf'],
@@ -22,7 +22,9 @@ GOLF = {1: ['alfred tup holmes golf club','alfred tup holmes club','alfred tup h
         22: ['top golf driving range','top golf'],
         23: ['georgia trail driving range','georgia trail'],
         24: ['peachtree golf center driving range','peachtree golf center','peachtree golf'],
-        25: ['druid hills golf course','druid hills']}
+        25: ['druid hills golf course','druid hills'],
+        26: ['buckhead', 'buckhead golf', 'buckhead golf course'],
+        27: ["duluth", "duluth course", "duluth golf", "duluth golf course"]}
 
 
 GOLF_INFO = {'ft_1': "Golf Georgia - https://golfgeorgia.info/Alfred-Tup-Holmes-Golf",
@@ -49,7 +51,9 @@ GOLF_INFO = {'ft_1': "Golf Georgia - https://golfgeorgia.info/Alfred-Tup-Holmes-
              'ft_22': "Golf Georgia - https://golfgeorgia.info/top-golf-driving-range",
              'ft_23': "Golf Georgia - https://golfgeorgia.info/georiga-trail-driving-range",
              'ft_24': "Golf Georgia - https://golfgeorgia.info/peachtree-golf-center",
-             'ft_25': "Golf Georgia - https://golfgeorgia.info/druid-hills-golf-course" }
+             'ft_25': "Golf Georgia - https://golfgeorgia.info/druid-hills-golf-course" ,
+             'ft_26': "Golf Georgia - https://golfgeorgia.info/buckhead-golf-course",
+             'ft_27': "Golf Georgia - https://golfgeorgia.info/buckhead-golf-course"}
 
 
 
@@ -79,7 +83,9 @@ GOLF_IMG = {
             22 : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/TopGolfX.png',
             23 : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/GeorgiaTrailGG-transparent.png',
             24 : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/PeachtreeGolfX.png',
-            25 : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/DruidHillsX.png'
+            25 : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/DruidHillsX.png',
+            26: 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/golf+swing+logo+white+x+512.png',
+            27: 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/golf+swing+logo+white+x+512.png'
 }
 
 def map(golf_name):

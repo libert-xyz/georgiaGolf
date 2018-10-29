@@ -40,22 +40,6 @@ featured_dict = {
                 }
 
 
-
-# GOLF_COURSES_DICT = {
-#
-#             'river-pines-golf' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/river-pines-golf.png',
-#             'brown-mill' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/browns-mill.png',
-#             'northcrest-golf-range' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/north-cherokee-town-and-country.png',
-#             'cobblestone-golf-club' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/cobblestone-golf-club.png',
-#             'bears-best-atlanta' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/bears-best-atlanta.png',
-#             'alfred-tup-holmes' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/alfred-tup-holmes.png',
-#             'charlie-yates-golf': 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/charlie-yates-golf.png',
-#             'fox-creek-golf-club': 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/fox-creek-golf-club.png',
-#             'ansley-golf-club' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/ansley-golf-club.png',
-#             'golf-tech-driving-range' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/golf-tech-driving-range.png',
-#             'marietta-golf-center-driving-range' : 'https://s3.amazonaws.com/golf-course-skill-production/new-optimized/marietta-golf-center-driving-range.png'
-#             }
-
 @ask.launch
 def launch():
 
@@ -148,6 +132,9 @@ def drvingRange():
 @ask.intent('SelectGolfCourseOnlyIntent')
 def selectGolfCourseOnly(golfCourseName):
 
+
+    session.attributes['yes'] = 'featured'
+
     #return {number} or None
     cName = map(golfCourseName.lower())
     print '++++++' + golfCourseName + '+++++++'
@@ -160,7 +147,7 @@ def selectGolfCourseOnly(golfCourseName):
         golf_course = render_template('g_'+str(cName))
         return question(golf_course) \
             .standard_card(title='Golf Georgia',
-            text=golfCourseName,
+            text=golfCourseName.capitalize(),
             large_image_url=map_img(cName))
 
     else:
@@ -170,6 +157,8 @@ def selectGolfCourseOnly(golfCourseName):
 
 @ask.intent('SelectGolfCourseIntent')
 def selectGolfCourse(golfCourseName):
+
+    session.attributes['yes'] = 'featured'
 
     #return ft_{number} or None
     cName = map(golfCourseName.lower())
@@ -183,7 +172,7 @@ def selectGolfCourse(golfCourseName):
         golf_course = render_template('g_'+str(cName))
         return question(golf_course) \
             .standard_card(title='Golf Georgia',
-            text=golfCourseName,
+            text=golfCourseName.capitalize(),
             large_image_url=map_img(cName))
 
     else:
@@ -213,6 +202,7 @@ def yes_func():
             send_text = render_template('send_text')
             send_message(phone_n,session.attributes.get('info'))
 
+            session.attributes['yes'] = ''
             return question(send_text) \
                     .standard_card(title='Golf Georgia',
                     text=send_text,
@@ -236,7 +226,7 @@ def yes_func():
     else:
         return question('Would you like to hear today featured golf course or ask a question about a golf course or driving range?') \
                 .standard_card(title='Golf Georgia',
-                text=send_text,
+                text='Would you like to hear today featured golf course or ask a question about a golf course or driving range?',
                 large_image_url=golfcourse_img)
 
 @ask.intent('PhoneNumberIntent')
