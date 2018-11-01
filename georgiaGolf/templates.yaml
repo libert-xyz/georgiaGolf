@@ -2,13 +2,16 @@
 
 welcome: |
 
-            Hello, would you like to hear today's featured golf course or ask a question about a
-            golf course or driving range?
+            Hello, would you like to hear
+            today's featured golf course or
+            ask a question about a golf course or driving range?
 
 fallback: |
 
-        sorry i didn't understand what you said,
-        Would you like to hear the featured golf course or ask a question about a golf course or driving range?
+            Sorry i didn't understand what
+            you said, Would you like to hear
+            the featured golf course or ask
+            a question about a golf course or driving range?
 
 
 ft_1: |
@@ -76,8 +79,13 @@ ft_11: |
 
 g_1: |
 
-      Alfred Tup Holmes Golf Club is an 18-hole public golf course with a slope rating of 120 and a 69.
-      The course features 3 sets of tees for different skill levels. Fees are $22 dollars on week days and $28 on weekends
+      Alfred Tup Holmes Golf Club is
+      an 18-hole public golf course
+      with a slope rating of 120 and
+      a 69. The course features 3 sets
+      of tees for different skill levels.
+      Fees are $22 dollars on week days
+      and $28 on weekends
 
       Would you like me to send you info via web link to your mobile device?
 
@@ -85,7 +93,10 @@ g_1: |
 g_2: |
 
 
-    Ansley Golf Club Midtown is a 9-hole golf course designed by Ward Northrup and has a slope rating of 138 and a 73.
+    Ansley Golf Club Midtown is a
+    9-hole golf course designed by
+    Ward Northrup and has a slope
+    rating of 138 and a 73.
 
     Would you like me to send you info via web link to your mobile device?
 
@@ -93,8 +104,11 @@ g_2: |
 g_3: |
 
 
-    An 18-hole golf course, Bear’s Best is a high-end daily fee course focused on corporate entertaining and golf outings.vary from
-    fifty nine dollars to one hundred nineteen dollars.
+    An 18-hole golf course, Bear’s
+    Best is a high-end daily fee course
+    focused on corporate entertaining
+    and golf outings. vary from fifty nine
+    dollars to one hundred nineteen dollars.
 
     Would you like me to send you info via web link to your mobile device?
 
@@ -102,49 +116,76 @@ g_3: |
 g_4: |
 
 
-    Brown Mill Golf Course is has challenging landscapes with a slope rating of 123 and a 71 USGA rating.
-    The course features 3 sets of tees for different skill levels
+    Brown Mill Golf Course is has
+    challenging landscapes with a
+    slope rating of 123 and a 71
+    USGA rating. The course features 3
+    sets of tees for different skill levels
 
     Would you like me to send you info via web link to your mobile device?
 
 
 g_5: |
 
-  Charlie Yates Golf is a 9-hole public course that features 3 sets of tees for different skill levels. Fees vary from fourteen dollars to eighteen dollars.
+  Charlie Yates Golf is a 9-hole
+  public course  that features 3 sets
+  of tees for different skill levels.
+  Fees vary from fourteen dollars to
+  eighteen dollars.
 
   Would you like me to send you info via web link to your mobile device?
 
 
 g_6: |
 
-  Cobblestone Golf Club is voted Best Municipal Courses by Golfweek. Additional awards  include a Four Star rating by Golf Digest,
-  they have been featured on Top 100 Courses You can Play by Golf Magazine,  Course rates vary from $25. to $67.
+  Cobblestone Golf Club is voted Best
+  Municipal Courses by Golfweek. Additional
+  awards  include a Four Star rating by
+  Golf Digest, they have been featured on
+  Top 100 Courses You can Play by Golf Magazine,
+  Course rates vary from $25. to $67.
 
   Would you like me to send you info via web link to your mobile device?
 
 
 g_7: |
 
-  Located a few long par fives  from the new Atlanta Braves stadium, Fox Creek Golf Club and Legacy Golf
-  Links are two of the nation’s best driving range and golf destinations, recognized nationally as a Top 50 Public Driving Range Facility by Golf Range Association of America.
-  Range bucket ball fees range from five dollars to thirteen dollars.
+  Located a few long par fives
+  from the new Atlanta Braves stadium,
+  Fox Creek Golf Club and Legacy Golf
+  Links are two of the nation’s best
+  driving range and golf destinations,
+  recognized nationally as a Top 50 Public
+  Driving Range Facility by Golf Range
+  Association of America.
+  Range bucket ball fees range from five
+  dollars to thirteen dollars.
 
   Would you like me to send you info via web link to your mobile device?
 
 
 g_8: |
 
-    Golf Tech Driving Range is an indoor golf facility who has helped thousands of golfers improve their game with a 96 percent success rate.
-    Golf Tech provides you with access to advanced golf training technology including motion measurement and video analysis that is rarely available to the average golfer.
-    Three Atlanta locations available.  Discounts on lesson plans.
+    Golf Tech Driving Range is an indoor
+    golf facility who has helped thousands
+    of golfers improve their game with a
+    96 percent success rate. Golf Tech provides
+    you with access to advanced golf training
+    technology including motion measurement and
+    video analysis that is rarely available to
+    the average golfer. Three Atlanta locations
+    available.  Discounts on lesson plans.
 
     Would you like me to send you info via web link to your mobile device?
 
 
 g_9: |
 
-    Known for the best grass tees in Georgia, Marietta Golf Center  is among the top 100 driving ranges in America for over five years.
-    Range ball pricing from six to fourteen dollars.
+    Known for the best grass tees
+    in Georgia, Marietta Golf Center
+    is among the top 100 driving ranges
+    in America for over five years. Range
+    ball pricing from six to fourteen dollars.
 
 
     Would you like me to send you info via web link to your mobile device?
@@ -153,8 +194,11 @@ g_9: |
 g_10: |
 
 
-    North at Cherokee Town and Country Club is an 18-hole private golf course designed by Joe Lee and has a rating slope of 134 and a 73.
-    Fees for Week days and weekends are one hundred and fifty dollars.
+    North at Cherokee Town and Country
+    Club is an 18-hole private golf course
+    designed by Joe Lee and has a rating
+    slope of 134 and a 73. Fees for Week
+    days and weekends are one hundred and fifty dollars.
 
     Would you like me to send you info via web link to your mobile device?
 
@@ -162,44 +206,69 @@ g_10: |
 g_11: |
 
 
-    River Pines Golf Course is one of the best public golf courses in the Atlanta area.The practice facilities are top-notch with a full driving range,
-    chipping & putting greens, as well as regular golf clinics to keep your golf game moving forward.
+    River Pines Golf Course is one of
+    the best public golf courses in
+    the Atlanta area.The practice
+    facilities are top-notch with a
+    full driving range, chipping &
+    putting greens, as well as regular
+    golf clinics to keep your golf
+    game moving forward.
 
 
     Would you like me to send you info via web link to your mobile device?
 
 g_12: |
 
-        When the course reopens, Bobby Jones will be a revolutionary and spectacular reversible 9-hole golf course.
-        You will be able to play it twice – or 18 holes – and experience a different course the second time around.
-        Fees vary depending on skill level.
+    When the course reopens, Bobby Jones
+    will be a revolutionary and spectacular
+    reversible 9-hole golf course.
+    You will be able to play it twice
+    – or 18 holes –  and experience a different
+    course the second time around. Fees vary
+    depending on skill level.
 
-        Would you like me to send you info via web link to your mobile device?
+    Would you like me to send you info via web link to your mobile device?
 
 
 g_13 : |
 
 
-        Forest Hills Golf Club is Voted Best Public Golf Course in Augusta and offers affordable golf rates from $28 to $46 depending on the time of day.
-        Discounts for seniors, juniors, and students. Book your tee time online today. Just grab the web link from Alexa to get our telephone and address details.
+      Forest Hills Golf Club is Voted Best Public
+      Golf Course in Augusta and offers affordable
+      golf rates from $28 to $46 depending on the
+      time of day. Discounts for seniors, juniors,
+      and students. Book your tee time online today.
+      Just grab the web link from Alexa to get our
+      telephone and address details.
 
-        Would you like me to send you info via web link to your mobile device?
+      Would you like me to send you info via web link to your mobile device?
 
 
 g_14 : |
 
 
-        The par-72 golf course at Goshen Plantation Golf Club is one the best public golf in Augusta, Georgia.
-        It has a classic, parkland course to engage golfers of every level. Fees vary from ten to thirty dollars.
+        The par-72 golf course at Goshen
+        Plantation Golf Club is one the best
+        public golf in Augusta, Georgia.
+        It has a classic, parkland course to
+        engage golfers of every level. Fees
+        vary from ten to thirty dollars.
 
         Would you like me to send you info via web link to your mobile device?
 
 
 g_15: |
 
-      Indian Hills Country Club is an affordable family-oriented private club located in East Cobb County. The club features 27 holes of golf,
-      open seven days per week, with extensive practice facilities.
-      There are also eight tennis courts, three swimming pools, and a beautiful clubhouse featuring excellent dining and year-round social events.
+      Indian Hills Country Club is an
+      affordable family-oriented private
+      club located in East Cobb County.
+      The club features 27 holes of golf,
+      open seven days per week, with extensive
+      practice facilities. There are also
+      eight tennis courts, three swimming pools,
+      and a beautiful clubhouse featuring excellent
+      dining and year-round social events.
 
       Would you like me to send you info via web link to your mobile device?
 
@@ -207,34 +276,50 @@ g_15: |
 
 g_16: |
 
-        Located a few long par fives  from the new Atlanta Braves stadium, Fox Creek Golf Club and Legacy Golf Links are two of the nation’s
-        best driving range and golf destinations, recognized nationally as a Top 50 Public Driving Range Facility by Golf Range Association of America.
-        Range bucket ball fees range from five dollars to thirteen dollars.
+        Located a few long par fives  from the new
+        Atlanta Braves stadium, Fox Creek Golf Club
+        and Legacy Golf Links are two of the nation’s
+        best driving range and golf destinations,
+        recognized nationally as a Top 50 Public
+        Driving Range Facility by Golf Range
+        Association of America. Range bucket ball
+        fees range from five dollars to thirteen dollars.
 
         Would you like me to send you info via web link to your mobile device?
 
 g_17: |
 
-        John A. White Golf Course is a 9-hole a public golf course that measures 2842 yards from the longest tees.
-        Greens and fairways are bermuda grass. Fees range from eighteen dollars to twenty seven dollars.
+        John A. White Golf Course is a
+        9-hole a public golf course that
+        measures 2842 yards from the longest
+        tees. Greens and fairways are bermuda
+        grass.Fees range from eighteen dollars
+        to twenty seven dollars.
 
         Would you like me to send you info via web link to your mobile device?
 
 
 g_18: |
 
-        North at Cherokee Town and Country Club is an 18-hole private golf
-        course designed by Joe Lee and has a rating slope of 134 and a 73.
-        Fees for Week days and weekends are one hundred and fifty dollars.
+        North at Cherokee Town and Country
+        Club is an 18-hole private golf
+        course designed by Joe Lee and
+        has a rating slope of 134 and a 73.
+        Fees for Week days and weekends are
+        one hundred and fifty dollars.
 
         Would you like me to send you info via web link to your mobile device?
 
 
 g_19: |
 
-      Wolf Creek Golf Course is an 18-hole semi-private golf course with a slope rating of 142 and a 73.
-      The course is located just 10 minutes from Hartsfield-Jackson International Airport and 15 minutes from downtown Atlanta.
-      Fees range from twenty nine dollars to fifty nine dollars.
+      Wolf Creek Golf Course is an 18-hole
+      semi-private golf course with a slope
+      rating of 142 and a 73. The course is
+      located just 10 minutes from Hartsfield-Jackson
+      International Airport and 15 minutes from
+      downtown Atlanta. Fees range from twenty
+      nine dollars to fifty nine dollars.
 
       Would you like me to send you info via web link to your mobile device?
 
@@ -242,9 +327,11 @@ g_19: |
 g_20: |
 
 
-      Candler Park Golf Course is a nine hole public golf course designed by Helen Smith.
-      Enjoy this course that features 3 sets of tees for different skill levels.
-      Fees range from eleven dollars to thirty-two dollars.
+      Candler Park Golf Course is a nine hole
+      public golf course designed by Helen Smith.
+      Enjoy this course that features 3 sets of
+      tees for different skill levels. Fees range
+      from eleven dollars to thirty-two dollars.
 
       Would you like me to send you info via web link to your mobile device?
 
@@ -252,7 +339,9 @@ g_20: |
 g_21: |
 
 
-        Cross Creek Golf Club is an 18-hole semi-private golf course with a slope rating of 61 and a 50 USGA rating.
+        Cross Creek Golf Club is an 18-hole
+        semi-private golf course with a slope
+        rating of 61 and a 50 USGA rating.
 
         Would you like me to send you info via web link to your mobile device?
 
@@ -260,18 +349,28 @@ g_21: |
 g_22: |
 
 
-    There are two Atlanta locations for Top golf.  Top Golf Midtown and Top Golf Alpha-rhetta.
-    Top Golf is the place to create unforgettable experiences with friends and family.
-    Each venue features fun and competitive golf games for all ages, climate-controlled playing, bays,
-    similar to a bowling lane. You’ll be impressed with their food and drink menu. Private spaces for groups available. Prices vary, Discounts available.
+    There are two Atlanta locations for Top golf.
+    Top Golf Midtown and Top Golf Alpha-rhetta.
+    Top Golf is the place to create unforgettable
+    experiences with friends and family.
+    Each venue features fun and competitive golf
+    games for all ages, climate-controlled playing,
+    bays, similar to a bowling lane. You’ll be impressed
+    with their food and drink menu. Private spaces
+    for groups available. Prices vary, Discounts available.
 
     Would you like me to send you info via web link to your mobile device?
 
 
 g_23: |
 
-    The Georgia Trail at Sugarloaf provides, Regulation Executive Golf Course, Driving Range, Short-Game Practice Area, Teaching Academy,
-    Champions Trail miniature PUTT-PUTT course. For private parties, they have the Outdoor Cabana Area with beach chairs, palm trees, waterfalls, and a music area.
+    The Georgia Trail at Sugarloaf provides,
+    Regulation Executive Golf Course, Driving
+    Range, Short-Game Practice Area, Teaching
+    Academy, Champions Trail miniature PUTT-PUTT
+    course. For private parties, they have the
+    Outdoor Cabana Area with beach chairs, palm
+    trees, waterfalls, and a music area.
 
     Would you like me to send you info via web link to your mobile device?
 
@@ -280,18 +379,29 @@ g_23: |
 g_24: |
 
 
-    Peachtree Golf Center  has a two-level hitting area, with numerous mat stations.
-    Heaters and fans are available for your comfort depending on the season and can be used even when its raining!
-    The driving range also has an expansive putting green, as well as an isolated chipping green, complete with a large green-side bunker,
-    so you can practice all your short game shots. In addition, the range is lighted for night use and closes at 10pm. Fees range from five to twelve dollars.
+    Peachtree Golf Center  has a
+    two-level hitting area, with numerous
+    mat stations. Heaters and fans are
+    available for your comfort depending
+    on the season and can be used even when
+    its raining! The driving range also has
+    an expansive putting green, as well as
+    an isolated chipping green, complete
+    with a large green-side bunker, so you
+    can practice all your short game shots.
+    In addition, the range is lighted for night use
+    and closes at 10pm. Fees range from five to twelve dollars.
 
     Would you like me to send you info via web link to your mobile device?
 
 
 g_25: |
 
-      The 18-hole Druid Hills Golf Club in Atlanta, Georgia is a private golf course that
-       measures 6860 yards from the longest tees and has a slope rating of 139 and a 73.
+      The 18-hole Druid Hills Golf
+      Club in Atlanta, Georgia is a
+      private golf course that measures
+      6860 yards from the longest tees
+      and has a slope rating of 139 and a 73.
 
        Would you like me to send you info via web link to your mobile device?
 
@@ -299,26 +409,40 @@ g_25: |
 g_26: |
 
 
-    Hello!  I’m happy to provide you with one public golf course in Buckhead.
-    You’ll enjoy Chastain Park golf course, which first opened in 1928.
-    The course has a  slope rating of 126 and a 71.
+    Hello!  I’m happy to provide
+    you with one public golf course
+    in Buckhead. You’ll enjoy Chastain
+    Park golf course, which first opened
+    in 1928. The course has a  slope
+    rating of 126 and a 71.
 
     Would you like me to send you info via web link to your mobile device?
 
 g_27: |
 
-    You'll want to check out Peachtree Golf Center. They have a two-level hitting area, with numerous mat stations.
-    Heaters and fans are available for your comfort depending on the season and can be used even when its raining!
-    The driving range also has an expansive putting green, as well as an isolated chipping green,
-    complete with a large green-side bunker, so you can practice all your short game shots.
-    In addition, the range is lighted for night use and closes at 10pm. Fees range from five to twelve dollars.
+    You'll want to check out Peachtree
+    Golf Center. They have a two-level
+    hitting area, with numerous mat stations.
+    Heaters and fans are available for your
+    comfort depending on the season and can
+    be used even when its raining!
+    The driving range also has an expansive
+    putting green, as well as an isolated
+    chipping green, complete with a large
+    green-side bunker, so you can practice
+    all your short game shots. In addition,
+    the range is lighted for night use and
+    closes at 10pm. Fees range from five to
+    twelve dollars.
 
     Would you like me to send you info via web link to your mobile device?
 
 
 drivingrange: |
 
-    I have found two driving ranges in Atlanta. Brown Mill Golf Course and Northcrest Golf Range. Which would you like information on?
+          I have found two driving ranges in
+          Atlanta. Brown Mill Golf Course and
+          Northcrest Golf Range. Which would you like information on?
 
 
 phone_confirm: |
@@ -328,32 +452,53 @@ phone_confirm: |
     </speak>
 
 
-send_text: information is sent to your device, Would you like to ask about another golf course?
+send_text:  information is sent to your device, Would you like to ask about another golf course?
 
 
 phone_incorrect: Okay. Let's try one more time, tell me your phone number
 
 
 ask_golf: |
-              Okay. I can tell you golf courses in Atlanta and Augusta.
-              Or, you can ask me about a specific golf course, or a location,  like Duluth, Buckhead, Cobb.
-              Which would you like to ask?
+              Okay. I can tell you golf courses
+              in Atlanta and Augusta. Or, you can
+              ask me about a specific golf course,
+              or a location,  like Duluth, Buckhead,
+              Cobb. Which would you like to ask?
 
 ask_augusta: |
 
-            I found two public golf courses: Forest Hills Golf Club and Goshen Plantation Golf Club. Which one would you like to hear about?
+            I found two public golf courses:
+            Forest Hills Golf Club and Goshen
+            Plantation Golf Club. Which one would you like to hear about?
 
 
 ask_atlanta: |
 
-          Here's a few golf courses, Cobblestone Golf Club, Bear's Best Atlanta, Ansley Golf Club. Which one would you like to hear about?
+          Here's a few golf courses, Cobblestone
+          Golf Club, Bear's Best Atlanta, Ansley
+          Golf Club. Which one would you like to hear about?
 
 
 help: |
 
+
           Hello, I’m happy to help.
-          To best explore Golf Georgia features; I will offer you a chance to hear the featured golf course or you can ask about a golf course or driving range.
-          For instance, to ask about a golf course in Atlanta, Augusta. Or you can ask by location such as Cobb, Duluth, Buckhead areas.
-          Once you find a golf course or driving range you like more information, I can send you a web link via text message that will feature the golf course or
-          driving range you are asking about. The web link opens up a landing page with contact information and google maps for directions.
-          When you are ready, ask me about an Atlanta or Augusta golf course, driving range.
+          To best explore Golf Georgia
+          features; I will offer you a chance
+          to hear the  featured golf course or
+          you can ask about a golf course or driving
+          range. For instance, to ask about a golf
+          course in Atlanta, Augusta. Or you can
+          ask by location such as Cobb, Duluth,
+          Buckhead areas. Once you find a golf course
+          or driving range you’d like more information,
+          I can send you a web link via text message
+          that will feature the golf course or driving
+          range you are asking about. The web link opens
+          up a landing page with contact information and
+          google maps for directions.
+
+          Would you like to hear the featured golf course of the day, or would you like ask a question about a golf course or driving range?
+
+
+no_response: Would you like to ask about another golf course?

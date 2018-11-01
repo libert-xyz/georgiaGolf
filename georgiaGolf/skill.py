@@ -6,6 +6,7 @@ from flask_ask import Ask, request, session, question, statement, audio
 from mapper import map, map_info, map_img
 from dynamoDB import write_user, check_phone
 from send_sms import send_message
+from datetime import date
 
 app = Flask(__name__)
 ask = Ask(app, "/")
@@ -63,8 +64,12 @@ def featuredGolfCourse():
     #List of Courses
     #session.attributes['featured'] = featured
 
-    random.shuffle(featured)
-    ft = featured.pop()
+    #random.shuffle(featured)
+    #ft = featured.pop()
+
+    today = date.today().weekday() + 1
+
+    ft = 'ft_' + str(today)
 
     #GOLF_INFO
     session.attributes['info'] = map_info(ft)
@@ -144,10 +149,12 @@ def selectGolfCourseOnly(golfCourseName):
     session.attributes['info'] = map_info('ft_'+str(cName))
 
     if cName != None:
-        golf_course = render_template('g_'+str(cName))
+
+        golf_info = 'g_'+str(cName)
+        golf_course = render_template(golf_info)
         return question(golf_course) \
             .standard_card(title='Golf Georgia',
-            text=golfCourseName.capitalize(),
+            text=golf_course,
             large_image_url=map_img(cName))
 
     else:
@@ -202,7 +209,8 @@ def yes_func():
             send_text = render_template('send_text')
             send_message(phone_n,session.attributes.get('info'))
 
-            session.attributes['yes'] = ''
+            #For NO close session
+            session.attributes['yes'] = 'another_golf'
             return question(send_text) \
                     .standard_card(title='Golf Georgia',
                     text=send_text,
@@ -210,8 +218,8 @@ def yes_func():
 
     #Phone OK send text to phone and write phone to DB
     elif session.attributes.get('yes') == 'phone_confirm':
-        session.attributes['yes'] = ''
 
+        session.attributes['yes'] = 'another_golf'
         #Write to DynamoDB
         writeU = write_user(str(session.user.userId),session.attributes.get('phone_number'))
 
@@ -223,6 +231,15 @@ def yes_func():
                 .standard_card(title='Golf Georgia',
                 text=send_text,
                 large_image_url=golfcourse_img)
+
+
+    elif session.attributes.get('yes') == 'another_golf':
+        ask_golf = render_template('ask_golf')
+        return question(ask_golf) \
+                .standard_card(title='Golf Georgia',
+                text='About Golf Course',
+                large_image_url=golfcourse_img)
+
     else:
         return question('Would you like to hear today featured golf course or ask a question about a golf course or driving range?') \
                 .standard_card(title='Golf Georgia',
@@ -255,10 +272,21 @@ def no_func():
                 .standard_card(title='Golf Georgia',
                 text=phone_incorrect,
                 large_image_url=golfcourse_img)
-    else:
+
+    #NO response twice close session
+    elif session.attributes.get('yes') == 'another_golf':
         return statement('Thanks for using Golf Georgia. Bye') \
             .standard_card(title='Golf Georgia',
             text='Thanks for using Golf Georgia. Bye',
+            large_image_url=golfcourse_img)
+
+    else:
+
+        no_response = render_template('no_response')
+        session.attributes['yes'] = 'another_golf'
+        return question(no_response) \
+            .standard_card(title='Golf Georgia',
+            text=no_response,
             large_image_url=golfcourse_img)
 
 
@@ -290,7 +318,7 @@ def help_fn():
 
     help_tmp = render_template('help')
 
-    return statement(help_tmp) \
+    return question(help_tmp) \
             .standard_card(title='Golf Course',
             text=help_tmp,
             large_image_url=golfcourse_img)
