@@ -2,7 +2,7 @@ import logging
 import os
 import random
 from flask import Flask, render_template
-from flask_ask import Ask, request, session, question, statement, audio
+from flask_ask import Ask, request, session, question, statement, audio, context
 from mapper import map, map_info, map_img
 from dynamoDB import write_user, check_phone
 from send_sms import send_message
@@ -192,7 +192,7 @@ def yes_func():
     #check if phone in DB
     if session.attributes.get('yes') == 'featured':
 
-        phone_n = check_phone(str(session.user.userId))
+        phone_n = check_phone(str(context.System.device.deviceId))
         #session.attributes['featured']
 
         if phone_n == False:
@@ -221,7 +221,7 @@ def yes_func():
 
         session.attributes['yes'] = 'another_golf'
         #Write to DynamoDB
-        writeU = write_user(str(session.user.userId),session.attributes.get('phone_number'))
+        writeU = write_user(str(context.System.device.deviceId),session.attributes.get('phone_number'))
 
         #TWILIO SEND
         send_text = render_template('send_text')
