@@ -256,7 +256,7 @@ def phone(phoneNumber):
         phone_confirm = render_template('phone_confirm',phone=phoneNumber)
         return question(phone_confirm) \
                 .standard_card(title='Golf Georgia',
-                text=phone_confirm,
+                text=phoneNumber + ' is that correct?',
                 large_image_url=golfcourse_img)
 
 
