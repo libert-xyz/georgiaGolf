@@ -9,7 +9,7 @@ welcome: |
 fallback: |
 
             Sorry i didn't understand what
-            you said, Would you like to hear
+            you said, would you like to hear
             the featured golf course or ask
             a question about a golf course or driving range?
 
@@ -452,7 +452,7 @@ phone_confirm: |
     </speak>
 
 
-send_text:  information is sent to your device, Would you like to ask about another golf course?
+send_text:  Information is sent to your device, would you like to ask about another golf course?
 
 
 phone_incorrect: Okay. Let's try one more time, tell me your phone number

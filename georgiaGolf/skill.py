@@ -94,7 +94,7 @@ def askGolfCourse():
 
     return question(ask_golf) \
             .standard_card(title='Golf Georgia',
-            text='About Golf Course',
+            text='About Georgia Golf',
             large_image_url=golfcourse_img)
 
 
@@ -237,7 +237,7 @@ def yes_func():
         ask_golf = render_template('ask_golf')
         return question(ask_golf) \
                 .standard_card(title='Golf Georgia',
-                text='About Golf Course',
+                text='About Georgia Golf',
                 large_image_url=golfcourse_img)
 
     else:
@@ -309,7 +309,7 @@ def cancel_fnc():
 def fallback():
     fallback = render_template('fallback')
     return question(fallback) \
-        .standard_card(title='Golf Course',
+        .standard_card(title='Georgia Golf',
         text=fallback,
         large_image_url=golfcourse_img)
 
@@ -319,7 +319,7 @@ def help_fn():
     help_tmp = render_template('help')
 
     return question(help_tmp) \
-            .standard_card(title='Golf Course',
+            .standard_card(title='Georgia Golf',
             text=help_tmp,
             large_image_url=golfcourse_img)
 
