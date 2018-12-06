@@ -60,13 +60,7 @@ def featuredGolfCourse():
 
 
     session.attributes['yes'] = 'featured'
-
-    #List of Courses
-    #session.attributes['featured'] = featured
-
-    #random.shuffle(featured)
-    #ft = featured.pop()
-
+    
     today = date.today().weekday() + 1
 
     ft = 'ft_' + str(today)

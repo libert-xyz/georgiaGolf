@@ -8,7 +8,7 @@ GOLF = {1: ['alfred tup holmes golf club','alfred tup holmes club','alfred tup h
         8: ['golf tech driving range','golf tech'],
         9: ['marietta golf center driving range','marietta golf center','marietta golf'],
         10: ['northcrest','northcrest golf','northcrest golf range'],
-        11: ['river pines golf', 'river pines golf course', 'river pines golf club'],
+        11: ['river pines golf', 'river pines golf course', 'river pines golf club','river pines'],
         12: ['bobby jones','boby jones'],
         13: ['forest hills golf club' ,'forest hills'],
         14: ['goshen plantation golf club','goshen','goshen plantation','goshen golf club','goshen club', 'goshen golf course','goshen course'],
